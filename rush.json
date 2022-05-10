@@ -1710,6 +1710,11 @@
       "packageName": "@azure/arm-education",
       "projectFolder": "sdk/education/arm-education",
       "versionPolicyName": "management"
+    },
+    {
+      "packageName": "@azure/apimanagement-custom-widget-scaffolder",
+      "projectFolder": "sdk/apimanagement/apimanagement-custom-widget-scaffolder",
+      "versionPolicyName": "utility"
     }
   ]
 }
