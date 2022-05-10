@@ -1730,6 +1730,11 @@
       "packageName": "@azure/arm-confidentialledger",
       "projectFolder": "sdk/confidentialledger/arm-confidentialledger",
       "versionPolicyName": "management"
+    },
+    {
+      "packageName": "@azure/apimanagement-custom-widget-scaffolder",
+      "projectFolder": "sdk/apimanagement/apimanagement-custom-widget-scaffolder",
+      "versionPolicyName": "utility"
     }
   ]
 }
