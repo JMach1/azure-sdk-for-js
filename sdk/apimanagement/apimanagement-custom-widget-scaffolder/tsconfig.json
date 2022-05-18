@@ -2,13 +2,26 @@
   "extends": "../../../tsconfig.package",
   "compilerOptions": {
     "target": "ESNext",
-    "outDir": "./dist",
-    "lib": ["ESNext", "DOM"],
+    "outDir": "./dist-esm",
+    "declarationDir": "./types",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
     "paths": {
-      "@azure/apimanagement-custom-widget-scaffolder": ["./src/index"]
+      "@azure/apimanagement-custom-widget-scaffolder": [
+        "./src/index"
+      ]
     }
   },
-  "include": [
-    "src"
+  "exclude": [
+    "node_modules",
+    "types",
+    "temp",
+    "browser",
+    "dist",
+    "dist-esm",
+    "./samples/**/*.ts",
+    "templates"
   ]
 }

@@ -24,39 +24,52 @@
   "files": [
     "*"
   ],
-  "main": "./index.umd.js",
-  "module": "./index.es.js",
-  "exports": {
-    ".": {
-      "import": "./index.es.js",
-      "require": "./index.umd.js"
-    }
-  },
+  "main": "./dist/src/index.umd.js",
+  "module": "./dist-esm/src/index.js",
   "types": "./apimanagement-custom-widget-scaffolder.d.ts",
   "scripts": {
     "start": "vite",
     "build": "vite build && tsc --emitDeclarationOnly && cp package.json dist",
+    "build:node": "tsc -p .",
+    "build:browser": "tsc -p . && vite build && npm run api-extractor",
+    "api-extractor": "api-extractor run --local",
     "pack": "npm run build && cd dist && npm pack",
     "lint": "eslint package.json src --ext .ts",
     "lint:fix": "eslint package.json src --ext .ts --fix",
-    "test": "mocha --require ts-node/register ./test/**/*.ts"
+    "test": "mocha -r ts-node/register dist-esm/test/main.js",
+    "test:browser": "karma start"
   },
   "devDependencies": {
     "@azure/eslint-plugin-azure-sdk": "^3.0.0",
+    "@types/chai": "^4.1.6",
     "@types/file-saver": "^2.0.5",
     "@types/mocha": "^9.1.1",
     "@types/mustache": "^4.1.2",
     "@types/node": "^17.0.21",
+    "@microsoft/api-extractor": "7.18.11",
     "eslint": "^7.15.0",
+    "chai": "^4.2.0",
+    "karma": "^6.2.0",
+    "karma-chrome-launcher": "^3.0.0",
+    "karma-coverage": "^2.0.0",
+    "karma-edge-launcher": "^0.4.2",
+    "karma-env-preprocessor": "^0.1.1",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-junit-reporter": "^2.0.1",
+    "karma-mocha": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-sourcemap-loader": "^0.3.8",
     "mocha": "^9.2.2",
+    "puppeteer": "^1.11.0",
     "typescript": "^4.5.4",
+    "prettier": "^2.5.1",
     "vite": "^2.8.0",
     "vite-plugin-virtual": "^0.1.1"
   },
   "dependencies": {
     "file-saver": "^2.0.5",
     "jszip": "^3.7.1",
-    "mustache": "^4.2.0",
-    "prettier": "^2.5.1"
+    "mustache": "^4.2.0"
   }
 }
