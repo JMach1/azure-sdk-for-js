@@ -1712,7 +1712,7 @@
       "versionPolicyName": "management"
     },
     {
-      "packageName": "@azure/apimanagement-custom-widget-scaffolder",
+      "packageName": "@azure-tools/apimanagement-custom-widget-scaffolder",
       "projectFolder": "sdk/apimanagement/apimanagement-custom-widget-scaffolder",
       "versionPolicyName": "utility"
     }
