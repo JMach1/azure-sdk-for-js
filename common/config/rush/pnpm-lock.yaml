@@ -2728,6 +2728,16 @@ packages:
       '@types/node': 17.0.31
     dev: false
 
+  /@types/yargs-parser/21.0.0:
+    resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
+    dev: false
+
+  /@types/yargs/17.0.10:
+    resolution: {integrity: sha512-gmEaFwpj/7f/ROdtIlci1R1VYU1J4j95m8T+Tj3iBgiBFKg1foE/PSl93bBd5T9LDXNPo8UlNN6W0qwD8O5OaA==}
+    dependencies:
+      '@types/yargs-parser': 21.0.0
+    dev: false
+
   /@types/yauzl/2.10.0:
     resolution: {integrity: sha512-Cn6WYCm0tXv8p6k+A8PvbDG763EDpBoTzHdA+Q/MF6H3sapGjCm9NzoaJncJS9tUKSuCoDs9XHxYYsQDgxR6kw==}
     requiresBuild: true
@@ -9704,7 +9714,7 @@ packages:
     dev: false
 
   file:projects/apimanagement-custom-widget-scaffolder.tgz:
-    resolution: {integrity: sha512-+++34Hc59VJfcSJAH+CIo42/73DHS30ymC71w6tkei/HEuU4ZjFAu8dvfanloQ+9o9e/RNycjL4hLmZ0ZHHJXw==, tarball: file:projects/apimanagement-custom-widget-scaffolder.tgz}
+    resolution: {integrity: sha512-Cg1Q2R3eppykRmHzcTaprRswRV4hvCQfHZXiKdK6YZPCffuiP7OH//HMcaSj4ftSuSQ977YHZaZDBod6s9u2qQ==, tarball: file:projects/apimanagement-custom-widget-scaffolder.tgz}
     name: '@rush-temp/apimanagement-custom-widget-scaffolder'
     version: 0.0.0
     dependencies:
@@ -9717,6 +9727,8 @@ packages:
       '@types/mustache': 4.1.2
       '@types/node': 12.20.50
       '@types/sinon': 9.0.11
+      '@types/yargs': 17.0.10
+      '@types/yargs-parser': 21.0.0
       cross-env: 7.0.3
       dotenv: 8.6.0
       eslint: 7.32.0
@@ -9739,6 +9751,8 @@ packages:
       util: 0.12.4
       vite: 2.9.9
       vite-plugin-virtual: 0.1.1_vite@2.9.9
+      yargs: 17.4.1
+      yargs-parser: 21.0.1
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
