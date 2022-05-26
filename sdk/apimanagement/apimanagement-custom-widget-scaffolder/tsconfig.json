@@ -1,33 +1,3 @@
-// {
-//   "compilerOptions": {
-//     "target": "ES2019",
-//     "module": "commonjs",
-//     "moduleResolution": "node",
-//     "esModuleInterop": true,
-//     "outDir": "./dist-esm",
-//     "declaration": false,
-//     "lib": [
-//       "ES2019",
-//       "ESNext.AsyncIterable"
-//     ],
-//     "newLine": "LF",
-//     "strict": true,
-//     "alwaysStrict": true,
-//     "noImplicitAny": true,
-//     "noUnusedLocals": true,
-//     "noUnusedParameters": true,
-//     "downlevelIteration": true,
-//     "resolveJsonModule": true,
-//     "skipLibCheck": true
-//   },
-//   "include": [
-//     "./src/**/*.ts",
-//     "./test/**/*.ts"
-//   ],
-//   "exclude": [
-//     "./src/templates/**"
-//   ]
-// }
 {
   "extends": "../../../tsconfig.package",
   "compilerOptions": {
