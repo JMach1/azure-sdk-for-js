@@ -32,7 +32,7 @@
   "types": "types/latest/apimanagement-custom-widget-scaffolder.d.ts",
   "scripts": {
     "audit": "node ../../../common/scripts/rush-audit.js && rimraf node_modules package-lock.json && npm i --package-lock-only 2>&1 && npm audit",
-    "build": "tsc",
+    "build": "npm run clean && tsc && api-extractor run --local",
     "build:test": "echo Skipped.",
     "check-format": "prettier --list-different --config ../../../.prettierrc.json --ignore-path ../../../.prettierignore \"src/**/*.ts\" \"test/**/*.ts\" \"samples-dev/**/*.ts\" \"*.{js,json}\"",
     "clean": "rimraf dist dist-* types *.tgz *.log",
@@ -89,6 +89,5 @@
     "inquirer": "^8.2.4",
     "yargs": "^17.0.1",
     "yargs-parser": "^21.0.1"
-
   }
 }
