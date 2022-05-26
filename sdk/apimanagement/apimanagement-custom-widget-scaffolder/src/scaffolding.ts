@@ -83,7 +83,11 @@ export async function generateProject(
       })
     }
 
-    const relativePath = file
+    let relativePath = file
+    if (__dirname.includes("\\")) {
+      relativePath = relativePath.replace(/\//g, "\\")
+    }
+    relativePath = relativePath
       .replace(joinPath(__dirname, "templates", "_shared"), "")
       .replace(joinPath(__dirname, "templates", widgetConfig.tech), "")
       .replace(templateSuffix, "")
