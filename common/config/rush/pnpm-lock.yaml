@@ -8,7 +8,7 @@ specifiers:
   '@rush-temp/ai-form-recognizer': file:./projects/ai-form-recognizer.tgz
   '@rush-temp/ai-metrics-advisor': file:./projects/ai-metrics-advisor.tgz
   '@rush-temp/ai-text-analytics': file:./projects/ai-text-analytics.tgz
-  '@rush-temp/apimanagement-custom-widget-scaffolder': file:./projects/apimanagement-custom-widget-scaffolder.tgz
+  '@rush-temp/api-management-custom-widgets-scaffolder': file:./projects/api-management-custom-widgets-scaffolder.tgz
   '@rush-temp/app-configuration': file:./projects/app-configuration.tgz
   '@rush-temp/arm-advisor': file:./projects/arm-advisor.tgz
   '@rush-temp/arm-analysisservices': file:./projects/arm-analysisservices.tgz
@@ -293,7 +293,7 @@ dependencies:
   '@rush-temp/ai-form-recognizer': file:projects/ai-form-recognizer.tgz
   '@rush-temp/ai-metrics-advisor': file:projects/ai-metrics-advisor.tgz
   '@rush-temp/ai-text-analytics': file:projects/ai-text-analytics.tgz
-  '@rush-temp/apimanagement-custom-widget-scaffolder': file:projects/apimanagement-custom-widget-scaffolder.tgz
+  '@rush-temp/api-management-custom-widgets-scaffolder': file:projects/api-management-custom-widgets-scaffolder.tgz
   '@rush-temp/app-configuration': file:projects/app-configuration.tgz
   '@rush-temp/arm-advisor': file:projects/arm-advisor.tgz
   '@rush-temp/arm-analysisservices': file:projects/arm-analysisservices.tgz
@@ -9325,9 +9325,9 @@ packages:
       - utf-8-validate
     dev: false
 
-  file:projects/apimanagement-custom-widget-scaffolder.tgz:
-    resolution: {integrity: sha512-N9we3oSTH+SX77lveyhSM1hKLzgH1tbJmAIuwRBdbeAKxkAMGGUcK/AoIzc+aL1vK7TjYaVYPN2bybHgb5AXZA==, tarball: file:projects/apimanagement-custom-widget-scaffolder.tgz}
-    name: '@rush-temp/apimanagement-custom-widget-scaffolder'
+  file:projects/api-management-custom-widgets-scaffolder.tgz:
+    resolution: {integrity: sha512-J6GSiVT+kfT1wYD33FHfC/HOMYRaW2PCZ2PZtL6xnMI+EbhPvVFsPQ0Sa5DSnHQ1t/VUbpYIgMLFlJLAVS5yaQ==, tarball: file:projects/api-management-custom-widgets-scaffolder.tgz}
+    name: '@rush-temp/api-management-custom-widgets-scaffolder'
     version: 0.0.0
     dependencies:
       '@microsoft/api-extractor': 7.18.11
@@ -9356,15 +9356,12 @@ packages:
       rimraf: 3.0.2
       rollup: 2.75.6
       sinon: 9.2.4
-      ts-node: 10.7.0_883919596b5eb7018685c14864aed828
       tslib: 2.4.0
       typescript: 4.6.4
       util: 0.12.4
       yargs: 17.5.1
       yargs-parser: 21.0.1
     transitivePeerDependencies:
-      - '@swc/core'
-      - '@swc/wasm'
       - supports-color
     dev: false
 
